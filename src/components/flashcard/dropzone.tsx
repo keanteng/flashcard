@@ -6,9 +6,10 @@ import { CrossCircledIcon, CheckCircledIcon, Cross1Icon } from '@radix-ui/react-
 interface DropzoneProps {
   onFileUpload: (content: string) => void;
   onGenerateFlashcards: () => void;
+  onRemoveFile: () => void;
 }
 
-const Dropzone: React.FC<DropzoneProps> = ({ onFileUpload, onGenerateFlashcards }) => {
+const Dropzone: React.FC<DropzoneProps> = ({ onFileUpload, onGenerateFlashcards, onRemoveFile }) => {
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [uploadStatus, setUploadStatus] = useState<string | null>(null);
   const [fileInfo, setFileInfo] = useState<{ name: string; size: number } | null>(null);
@@ -40,7 +41,8 @@ const Dropzone: React.FC<DropzoneProps> = ({ onFileUpload, onGenerateFlashcards 
     setFileInfo(null);
     setUploadStatus(null);
     setErrorMessage(null);
-    setShowGenerateButton(false); 
+    setShowGenerateButton(false);
+    onRemoveFile(); 
   }
 
   const handleGenerateFlashcards = () => {

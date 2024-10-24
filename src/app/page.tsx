@@ -17,7 +17,9 @@ export default function Home() {
             </Link>
           </button>
           <button className="bg-gray-200 text-gray-800 px-6 py-3 rounded-md shadow-md hover:bg-gray-300 transition duration-300">
-            Learn More
+          <Link href="/docs">
+              Learn More
+            </Link>
           </button>
         </div>
       </div>
