@@ -5,7 +5,7 @@ export default function Docs() {
         <h1 className="font-bold text-3xl mb-8">Flashcard Project Documentation</h1>
         
         <section className="mb-8">
-          <h2 className="font-semibold text-2xl mb-4">Introduction</h2>
+          <h1 className="font-semibold text-2xl mb-4">Introduction</h1>
           <p className="text-gray-700">
             Welcome to the documentation for the Flashcard Project. This project allows users to upload Markdown files, generate flashcards, and download the generated flashcards as a CSV file.
           </p>
@@ -38,17 +38,17 @@ export default function Docs() {
             <code className="text-sm text-gray-800">
               {`# Example Markdown File
 
-## Question 1
-What is Next.js?
+                ## Question 1
+                What is Next.js?
 
-## Answer 1
-Next.js is a React framework for production.
+                ## Answer 1
+                Next.js is a React framework for production.
 
-## Question 2
-What is TypeScript?
+                ## Question 2
+                What is TypeScript?
 
-## Answer 2
-TypeScript is a typed superset of JavaScript.`}
+                ## Answer 2
+                TypeScript is a typed superset of JavaScript.`}
             </code>
           </pre>
         </section>

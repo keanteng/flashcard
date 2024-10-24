@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import Dropzone from '@/components/flashcard/dropzone';
-import { flashcardData } from '@/utils/data';
 import { SymbolIcon, DownloadIcon } from '@radix-ui/react-icons';
 import { flashcard_generator } from '@/utils/actions';
 
