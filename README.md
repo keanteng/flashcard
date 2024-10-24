@@ -2,6 +2,8 @@
 
 Welcome to the Flashcard Project! This project allows users to upload Markdown files, generate flashcards, and download the generated flashcards as a CSV file.
 
+![alt text](flashcard_nextjs.gif)
+
 ## Table of Contents
 
 - [Flashcard Project](#flashcard-project)
